@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Sigil of Baphomet (Tomino's Hell Gate)</title>
+</head>
+<body>
+	<h1>Sigil of Baphomet</h1>
+	<img src="sigilOfBaphomet.png" alt="Sigil of Baphomet" width = "300" height = auto id = "sigil">
+
+<div>
+	<img src="candle.gif" alt="Light?" id = "vela1">
+	<img src="candle.gif" alt="Light?" id = "vela2">
+	<img src="candle.gif" alt="Light?" id = "vela3">
+	<img src="candle.gif" alt="Light?" id = "vela4">
+	<img src="candle.gif" alt="Light?" id = "vela5"> 
+</div>
+
+	<button onclick="candle1(); sigil()" id="ponta1"></button>
+	<button onclick="candle2(); sigil()" id="ponta2"></button>
+	<button onclick="candle3(); sigil()" id="ponta3"></button>
+	<button onclick="candle4(); sigil()" id="ponta4"></button>
+	<button onclick="candle5(); sigil()" id="ponta5"></button>
+
+<script type="text/javascript">
+	const candle1 = () => {
+		document.getElementById("vela1").style.display = 'block';
+	}
+	const candle2 = () => {
+		document.getElementById("vela2").style.display = 'block';
+	}
+	const candle3 = () => {
+		document.getElementById("vela3").style.display = 'block';
+	}
+	const candle4 = () => {
+		document.getElementById("vela4").style.display = 'block';
+	}
+	const candle5 = () => {
+		document.getElementById("vela5").style.display = 'block';
+	}
+
+	function sigil () {
+		var sigil = document.getElementById("sigil");
+		var luz1 = document.getElementById("vela1").style.display;
+		var luz2 = document.getElementById("vela2").style.display;
+		var luz3 = document.getElementById("vela3").style.display;
+		var luz4 = document.getElementById("vela4").style.display;
+		var luz5 = document.getElementById("vela5").style.display;
+		var jumpscare;
+		if (luz1 == 'block' && luz2 == 'block' && luz3 == 'block' && luz4 == 'block' && luz5 == 'block') {
+			sigil.src = "sigilOfBaphometOn.png";
+			sigil.style.filter = "none";
+			jumpscare = setTimeout(func, 5000);
+		}
+	}
+
+	function func() {
+		window.location.replace("d3m0n.html");
+	}
+</script>
+</body>
+</html>

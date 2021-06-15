@@ -1,0 +1,71 @@
+#vela1, #vela2, #vela3, #vela4, #vela5 {
+	height: 200px;
+	width: auto;
+	display: none;
+}
+
+#ponta1 {
+	position: fixed;
+	top: 172px;
+	left: 577px;
+}
+
+#ponta2 {
+	position: fixed;
+	top: 172px;
+	left: 715px;
+}
+
+#ponta3 {
+	position: fixed;
+	top: 304px;
+	left: 535px;
+}
+
+#ponta4 {
+	position: fixed;
+	top: 304px;
+	left: 758px;
+}
+
+#ponta5 {
+	position: fixed;
+	top: 386px;
+	left: 646px;
+}
+
+
+#sigil {
+	filter: invert(100%);
+}
+
+@font-face {
+ 	font-family: whoAsksSatan;
+ 	src: url(whoAsksSatan.ttf);
+}
+
+body {
+	background: black;
+	cursor: url(http://www.rw-designer.com/ursor-extern.php?id=79800);
+	text-align: center;
+}
+
+h1 {
+	font-family: "whoAsksSatan";
+	font-size: 48pt;
+	animation-name: blinker;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+div {
+	display: flex;
+	justify-content: space-between; 
+}
+
+@keyframes blinker {
+	0%{color:#c23c3c;}
+	50%{color:white;}
+	1000%{color:#c23c3c;}
+}
